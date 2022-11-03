@@ -1,8 +1,17 @@
+/* шрифты  */
+/* 'Comfortaa' 400 */
+/* 'Montserrat' 400 500 700*/
+
 /* главный цвет теста  color: rgba(0, 0, 0, 0.8);*/
 /* вторичный цвет текста color: #000000;*/
 /* акцент  #18A0FB;*/
 /* белый color: #FFFFFF; */
 /* вторичный цвет кода background: #F5F5F5; */
+
+/* font-family: 'Comfortaa', */
+/* cursive; */
+/* font-family: 'Montserrat', */
+/* sans-serif; */
 
 :root {
     --primary-text-color: rgba(0, 0, 0, 0.8);
@@ -12,6 +21,10 @@
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: -0.015em;
     color: var(--primary-text-color);
 
     background-color: var(--primary-bg-color);
@@ -25,6 +38,10 @@ body {
 /* header */
 
 .logo {
+    font-family: 'Comfortaa', cursive;
+    font-size: 28px;
+    line-height: 1.14;
+    text-decoration: none;
     color: var(--title-text-color);
 }
 
@@ -36,6 +53,10 @@ body {
 /* site-nav */
 
 .site-nav .link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    text-decoration: none;
     color: var(--accent-color);
 }
 
@@ -51,30 +72,49 @@ body {
 /* hero */
 
 .hero-title {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.43;
+    text-align: center;
     color: var(--title-text-color);
 }
 
 /* section  */
 
 .section-title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
     color: var(--title-text-color);
 }
 
-/* features */
+.section-description {
+    font-size: 36px;
+    line-height: 1.39;
+}
 
-.feature-list .title {
+/* features and examples*/
+
+.feature-list .title,
+.work-list .title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
     color: var(--title-text-color);
 }
+
+/* works  */
 
 /* examples  */
-
-.work-list .title {
-    color: var(--title-text-color);
-}
 
 /* button  */
 
 .button {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    text-decoration: none;
     color: var(--title-text-color);
 
     background-color: var(--primary-bg-color);
