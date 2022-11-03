@@ -44,6 +44,10 @@ body {
     color: var(--title-text-color);
 }
 
+.site-nav .link.current {
+    color: var(--title-text-color);
+}
+
 /* hero */
 
 .hero-title {
@@ -60,10 +64,6 @@ body {
 
 .feature-list .title {
     color: var(--title-text-color);
-}
-
-.feature-list .link {
-    color: var(--accent-color);
 }
 
 /* examples  */
