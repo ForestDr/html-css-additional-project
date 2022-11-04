@@ -131,3 +131,22 @@ body {
 
     background-color: var(--primary-bg-color);
 }
+
+/* footer  */
+
+.info-list .link {
+    font-size: 15px;
+    line-height: 1.6;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.info-list .primary-link {
+    font-weight: 700;
+    color: var(--title-text-color);
+}
+
+.info-list .link:hover,
+.info-list .link:focus {
+    color: var(--accent-color);
+}
