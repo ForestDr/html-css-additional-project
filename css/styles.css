@@ -18,6 +18,7 @@
     --title-text-color: #000000;
     --accent-color: #18A0FB;
     --primary-bg-color: #ffffff;
+    --secondary-bg-color: #F5F5F5;
 }
 
 body {
@@ -31,11 +32,23 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
 }
 
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 1440px;
+    
+    outline: 2px solid tomato;
+}
 
-/* header */
+/* logo */
 
 .logo {
     font-family: 'Comfortaa', cursive;
@@ -48,6 +61,12 @@ body {
 .logo:hover,
 .logo:focus {
     color: var(--accent-color);
+}
+
+/* page header  */
+
+.page-header {
+    background-color: #ccc;
 }
 
 /* site-nav */
@@ -71,25 +90,51 @@ body {
 
 /* hero */
 
+.hero {
+    text-align: center;
+
+    outline: 2px solid tomato;
+}
+
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+
     font-weight: 400;
     font-size: 56px;
     line-height: 1.43;
-    text-align: center;
-    color: var(--title-text-color);
+    color: var(--title-text-color);   
 }
 
 /* section  */
 
+.section {
+    padding: 120px 0;
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .section-title {
+    margin-top: 0;
+    margin-bottom: 60px;
+
     font-weight: 400;
     font-size: 48px;
     line-height: 1.5;
-    text-align: center;
     color: var(--title-text-color);
 }
 
+.section-title.centered {
+    text-align: center;
+}
+
 .section-description {
+    margin-top: 0;
+    margin-bottom: 80px;
+
     font-size: 36px;
     line-height: 1.39;
 }
@@ -98,26 +143,50 @@ body {
 
 .feature-list .title,
 .work-list .title {
+    margin-top: 0;
+    margin-bottom: 24px;
+
     font-weight: 700;
     font-size: 24px;
     line-height: 1.5;
     color: var(--title-text-color);
 }
 
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
 /* works  */
+
+.work-list > .item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.work-list > .item:nth-child(2n) {
+    background-color: var(--secondary-bg-color);
+}
 
 /* examples  */
 
 /* button  */
 
 .button {
+    display: inline-block;
+    padding: 11px 34px;
+    min-width: 130px;
+
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
+    text-align: center;
     text-decoration: none;
     color: var(--title-text-color);
 
     background-color: var(--primary-bg-color);
+    border: 1px solid transparent;
+    border-radius: 6px;
 }
 
 .button.primary {
@@ -130,6 +199,7 @@ body {
     color: var(--accent-color);
 
     background-color: var(--primary-bg-color);
+    border-color: var(--accent-color);
 }
 
 /* footer  */
