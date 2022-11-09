@@ -45,7 +45,7 @@ body {
     padding-left: 20px;
     width: 1560px;
     
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 /* nav  */
@@ -124,7 +124,7 @@ body {
 .hero {
     text-align: center;
 
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 .hero-title {
@@ -246,6 +246,31 @@ body {
     margin: 32px 42px;
 }
 
+/* Registration  */
+
+.registr-section {
+    background-color: var(--secondary-bg-color);
+}
+
+.registr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-description.no-margin {
+    margin-bottom: 0;
+}
+
+.registr .list-btn {
+    display: flex;
+    padding-right: 64px;
+}
+
+.registr .item:not(:last-child) {
+    margin-right: 45px;
+}
+
 /* button  */
 
 .button {
@@ -280,6 +305,30 @@ body {
 
 /* footer  */
 
+.info-container {
+    display: flex;
+    padding-bottom: 60px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.info-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.info-list > .item:not(:last-child) {
+    margin-right: 90px;
+}
+
+.info-list a {
+    display: block;
+}
+
+.info-list .secondary-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
 .info-list .link {
     font-size: 15px;
     line-height: 1.6;
@@ -288,6 +337,8 @@ body {
 }
 
 .info-list .primary-link {
+    margin-bottom: 16px;
+
     font-weight: 700;
     color: var(--title-text-color);
 }
@@ -295,4 +346,23 @@ body {
 .info-list .link:hover,
 .info-list .link:focus {
     color: var(--accent-color);
+}
+
+.info-list-btn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 157px;
+}
+
+.info-list-btn .item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-list {
+    display: flex;
 }
